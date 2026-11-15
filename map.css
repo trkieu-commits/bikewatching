@@ -35,14 +35,29 @@
 
 .legend {
   display: flex;
-  gap: 1px;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
   margin-block: 1em;
 }
 
+.legend-label {
+  color: #888;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+}
+
 .legend > div {
-  flex: 1;
-  padding: 0.4em 2em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.legend > div::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
   background: var(--color);
-  color: white;
-  text-align: center;
 }
